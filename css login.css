@@ -27,3 +27,11 @@ h3 {
     justify-content: center;
     margin-top: 200px;
 }
+input {
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 65px;
+}
