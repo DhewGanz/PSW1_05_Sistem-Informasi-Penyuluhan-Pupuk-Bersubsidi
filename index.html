@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Pupuk Bersubsidi</title>
+    <link rel="stylesheet" href="css/bootstrap3.3.7.css">
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="js/bootstrap3.3.7.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="img/latar.png">
+    <nav>
+        <div class="wrapper">
+            <form class="search-form">
+                <input type="text" id="search-input" placeholder="Cari..." oninput="liveSearch()">
+    <button type="button" onclick="searchFunction()">Cari</button>
+            </form>
+            <div class="logo"><a href="#">Selamat datang di Sistem Informasi Pupuk Bersubsidi</a></div>
+            <a href="#" class="tombol-menu">
+                <span class="garis"></span>
+                <span class="garis"></span>
+                <span class="garis"></span>
+            </a>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Info Pupuk<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="info1.html">Pupuk Cair</a></li>
+                            <li><a href="info2.html">Pupuk Padat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="lokasi.html">Lokasi</a></li>
+                    <li><a href="hubungi.html">Hubungi Kami</a></li>
+                    <li><a href="login.html">Masuk</a></li>
+                    <li><a href="register.html">Daftar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="home">
+            <div class="kolom searchable-element">
+                <h2>Berbagai jenis pupuk</h2>
+                <div>
+                    <img src="img/cair1.jpg" alt="gambar pupuk">
+                    <img src="img/cair2.jpg" alt="gambar pupuk">
+                    <img src="img/cair3.jpg" alt="gambar pupuk">
+
+                </div>
+            </div>
+
+            <div class="kolom searchable-element">
+                <h2>Harga Terjangkau</h2>
+                <img src="img/cair4.jpg" alt="gambar pupuk">
+                <img src="img/cair5.jpg" alt="gambar pupuk">
+                <img src="img/npk.jpg" alt="gambar pupuk">
+            </div>
+        </section>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2023 <b>Kelompok 5</b>
+        </div>
+    </div>
+</body>
+
+</html>
