@@ -13,14 +13,14 @@ function validateForm() {
           errorDiv.textContent = "Password tidak boleh kosong.";
           return false;
      }
-     return true;
      if (username.length < 6) {
-          errorDiv.textContent = "Username harus minimal 6 karakter.";
-          return false;
-     }
+        errorDiv.textContent = "Username harus minimal 6 karakter.";
+        return false;
+   }
 
-     if (password.length < 8 || !(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/.test(password))) {
-          errorDiv.textContent = "Password harus minimal 8 karakter dan berisi kombinasi huruf, angka, dan karakter khusus.";
-          return false;
-     }
+   if (password.length < 8 || !(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/.test(password))) {
+        errorDiv.textContent = "Password harus minimal 8 karakter dan berisi kombinasi huruf, angka, dan karakter khusus.";
+        return false;
+   }
+     return true;
 }
