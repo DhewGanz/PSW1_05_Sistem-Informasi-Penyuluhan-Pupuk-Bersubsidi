@@ -1,77 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Website Pupuk Bersubsidi</title>
+    <script src="js/dropdown.js"></script>
+  <link rel="stylesheet" href="css/css3.css">
+    <script src="color-modes.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet">  
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Informasi Pupuk Bersubsidi</title>
-    <link rel="stylesheet" href="css/bootstrap3.3.7.css">
-    <script src="js/jquery1.12.4.js"></script>
-    <script src="js/bootstrap3.3.7.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body background="img/latar.png">
-    <nav>
-        <div class="wrapper">
-            <form class="search-form">
-                <input type="text" id="search-input" placeholder="Cari..." oninput="liveSearch()">
-    <button type="button" onclick="searchFunction()">Cari</button>
-            </form>
-            <div class="logo"><a href="#">Selamat datang di Sistem Informasi Pupuk Bersubsidi</a></div>
-            <a href="#" class="tombol-menu">
-                <span class="garis"></span>
-                <span class="garis"></span>
-                <span class="garis"></span>
-            </a>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="tentang.html">Tentang Kami</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">Info Pupuk<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="info1.html">Pupuk Cair</a></li>
-                            <li><a href="info2.html">Pupuk Padat</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="lokasi.html">Lokasi</a></li>
-                    <li><a href="hubungi.html">Hubungi Kami</a></li>
-                    <li><a href="login.html">Masuk</a></li>
-                    <li><a href="register.html">Daftar</a></li>
-                </ul>
-            </div>
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 justify-content-between">
+              <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+              <li class="nav-item"><a class="nav-link" href="penjelasan.html">Pengertian</a></li>
+              <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" id="infoPupuk">Info Pupuk</a>
+                  <div class="dropdown-content" id="pupukDropdown">
+                    <a href="album.html">Pupuk Padat</a>
+                    <a href="album2.html">Pupuk Cair</a>
+    </div>
+              </div>    
+              <li class="nav-item"><a class="nav-link" href="lokasi.html">Lokasi</a></li>
+              <li class="nav-item"><a class="nav-link" href="forum.html">Kritik dan Saran</a></li>
+              <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+              <li class="nav-item"><a class="nav-link" href="profile.html">Kontak</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
+<main>
+  
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">    Sistem Informasi Pupuk Bersubsidi</h1>
+      <h3 class="fw-normal text-muted mb-3">Harga Terjangkau Kualitas Terjamin</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
 
-    <div class="wrapper">
-        <!-- untuk home -->
-        <section id="home">
-            <div class="kolom searchable-element">
-                <h2>Berbagai jenis pupuk</h2>
-                <div>
-                    <img src="img/cair1.jpg" alt="gambar pupuk">
-                    <img src="img/cair2.jpg" alt="gambar pupuk">
-                    <img src="img/cair3.jpg" alt="gambar pupuk">
-
-                </div>
-            </div>
-
-            <div class="kolom searchable-element">
-                <h2>Harga Terjangkau</h2>
-                <img src="img/cair4.jpg" alt="gambar pupuk">
-                <img src="img/cair5.jpg" alt="gambar pupuk">
-                <img src="img/npk.jpg" alt="gambar pupuk">
-            </div>
-        </section>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+       <h2 class="display-5">Pupuk Urea</h2>
+      </div>
+      <a href=""><img src="urea2.jpeg"
+      <div class="bg-body-tertiary shadow-sm mx-auto"  style="width: 40%; height: 300px; border-radius: 21px 21px 0 0;"></div></a>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Pupuk Ponska</h2>
+      </div>
+      <img src="phonska2.jpeg"
+      <div class="bg-dark shadow-sm mx-auto" style="width: 40%; height: 150px; border-radius: 21px 21px 0 0;"></div>
     </div>
 
-    <div id="copyright">
-        <div class="wrapper">
-            &copy; 2023 <b>Kelompok 5</b>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Pupuk NPK Mutiara</h2>
         </div>
-    </div>
-</body>
+        <img src="mutiara.jpg"
+        <div class="bg-body-tertiary shadow-sm mx-auto"  style="width: 40%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
 
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Songgo Langit Persada EM4 Pertanian</h2>
+          </div>
+          <img src="cair1.jpg"
+          <div class="bg-body-tertiary shadow-sm mx-auto"  style="width: 40%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Multitonik Pupuk Organik Cair</h2>
+            </div>
+            <img src="cair2.jpg"
+            <div class="bg-body-tertiary shadow-sm mx-auto"  style="width: 40%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div> 
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-body-secondary">&copy; Kelompok 5 </small>
+</footer>
+<script src="bundle.min.js"></script>
+
+    </body>
 </html>
