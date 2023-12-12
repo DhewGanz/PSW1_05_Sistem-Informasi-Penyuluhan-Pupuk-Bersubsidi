@@ -1702,3 +1702,5 @@ if ("undefined" == typeof jQuery)
         });
       });
   })(jQuery);
+
+  $(document).ready(function () { $('.dropdown-toggle').dropdown();});
