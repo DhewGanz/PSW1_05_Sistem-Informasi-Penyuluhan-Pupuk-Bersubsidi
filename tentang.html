@@ -5,46 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="js/dropdown.js"></script>
+    <link rel="stylesheet" href="css/css3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body background="img/latar.png">
+<body background="img/contact.png">
   <center>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang Kami</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="penjelasan.html">Pengertian</a></li>
+                <div class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn" id="infoPupuk">Info Pupuk</a>
+                    <div class="dropdown-content" id="pupukDropdown">
+                      <a href="album.html">Pupuk Padat</a>
+                      <a href="album2.html">Pupuk Cair</a>
+      </div>
+                </div>
+                <li class="nav-item"><a class="nav-link" href="lokasi.html">Lokasi</a></li>
+                <li class="nav-item"><a class="nav-link" href="forum.html">Kritik dan Saran</a></li>
+                <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Kontak</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section id="about-us">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>Selamat datang di halaman "Tentang Kami".</p>
+        <div class="about">
+            <h2>Tentang</h2>
+           <marquee><h1><b>Selamat datang di halaman kami yang berisi tentang informasi mengenai Pupuk Bersubsidi</b></h1></marquee>
 
             <h3>Visi</h3>
-            <p>Visi Kami:
-                "Menjadi penyedia solusi inovatif dalam manajemen distribusi pupuk subsidi untuk mendukung pertumbuhan sektor pertanian dan kesejahteraan petani."</p>
+            <p>Menjadi penyedia solusi inovatif dalam manajemen distribusi pupuk subsidi untuk mendukung pertumbuhan bagi sektor pertanian dan kesejahteraan petani.</p>
 
             <h3>Misi</h3>
-            <p>Misi Kami:
-                "1. Memberikan layanan informasi yang akurat dan real-time terkait alokasi dan distribusi pupuk subsidi.
+            <p>
+            1. Memberikan layanan informasi yang akurat dan real-time terkait alokasi dan distribusi pupuk bersubsidi.
+              <br>
+            2. Mengoptimalkan proses distribusi pupuk bersubsidi untuk memastikan ketersediaan tepat waktu.
+               <br>
+            3. Mendukung pertumbuhan pertanian berkelanjutan melalui pemanfaatan teknologi informasi.
+            </p>
+               
+            <h4>Komitmen</h4>
+            <p>Kami berkomitmen untuk terus mengembangkan dan menyempurnakan sistem informasi pupuk subsidi kami guna mendukung efisiensi dan efektivitas dalam distribusi pupuk subsidi di seluruh pelosok negeri.</p>
                 
-                Mengoptimalkan proses distribusi pupuk subsidi untuk memastikan ketersediaan tepat waktu.
-                Mendukung pertumbuhan pertanian berkelanjutan melalui pemanfaatan teknologi informasi.""Integritas, Inovasi, Keterbukaan, dan Pelayanan Prima adalah nilai-nilai yang menjadi landasan setiap langkah kami dalam memberikan kontribusi positif bagi sektor pertanian dan petani Indonesia."
-
-                Tim Kami:
-                "Ditenagai oleh tim yang berkompeten dan berdedikasi, kami percaya bahwa kolaborasi dan keberagaman adalah kunci kesuksesan dalam mencapai tujuan bersama."
-                
-                Komitmen Kami:
-                "Kami berkomitmen untuk terus mengembangkan dan menyempurnakan sistem informasi pupuk subsidi kami guna mendukung efisiensi dan efektivitas dalam distribusi pupuk subsidi di seluruh pelosok negeri."
-                
-                Hubungi Kami:
-                "Jika Anda memiliki pertanyaan lebih lanjut atau ingin berkolaborasi, jangan ragu untuk menghubungi tim kami. Kami siap memberikan layanan terbaik untuk mendukung keberhasilan sektor pertanian Indonesia."</p>
-
-           
+            <h4>Hubungi Kami</h4>
+            <p>Jika Anda memiliki pertanyaan lebih lanjut atau ingin berkolaborasi, jangan ragu untuk menghubungi tim kami. Kami siap memberikan layanan terbaik untuk mendukung keberhasilan sektor pertanian Indonesia.</p>
+               
+          <p><b>"Integritas, Inovasi, Keterbukaan, dan Pelayanan Prima adalah nilai-nilai yang menjadi landasan setiap langkah kami dalam memberikan kontribusi positif bagi sektor pertanian dan petani Indonesia."</b></p>
+            
         </div>
     </section>
 
